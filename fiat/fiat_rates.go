@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"time"
 
+	"github.com/dydysy/blockbook/db"
 	"github.com/golang/glog"
-	"github.com/trezor/blockbook/db"
 )
 
 // OnNewFiatRatesTicker is used to send notification about a new FiatRates ticker
@@ -115,7 +115,7 @@ func (rd *RatesDownloader) findEarliestMarketData() (*time.Time, error) {
 	maxDate := rd.startTime.Add(time.Duration(-24) * time.Hour) // today's historical tickers may not be ready yet, so set to yesterday
 	currentDate := maxDate
 	for {
-		var dataExists bool = false
+		var dataExists = false
 		for {
 			dataExists, err = rd.downloader.marketDataExists(&currentDate)
 			if err != nil {

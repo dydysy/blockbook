@@ -1,9 +1,9 @@
 package fujicoin
 
 import (
+	"github.com/dydysy/blockbook/bchain/coins/btc"
 	"github.com/martinboehm/btcd/wire"
 	"github.com/martinboehm/btcutil/chaincfg"
-	"github.com/trezor/blockbook/bchain/coins/btc"
 )
 
 const (

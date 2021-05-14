@@ -7,10 +7,10 @@ import (
 	"sync"
 	"time"
 
+	"github.com/dydysy/blockbook/bchain"
+	"github.com/dydysy/blockbook/db"
 	"github.com/golang/glog"
 	"github.com/juju/errors"
-	"github.com/trezor/blockbook/bchain"
-	"github.com/trezor/blockbook/db"
 )
 
 const defaultAddressesGap = 20

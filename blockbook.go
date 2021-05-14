@@ -17,15 +17,15 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/dydysy/blockbook/api"
+	"github.com/dydysy/blockbook/bchain"
+	"github.com/dydysy/blockbook/bchain/coins"
+	"github.com/dydysy/blockbook/common"
+	"github.com/dydysy/blockbook/db"
+	"github.com/dydysy/blockbook/fiat"
+	"github.com/dydysy/blockbook/server"
 	"github.com/golang/glog"
 	"github.com/juju/errors"
-	"github.com/trezor/blockbook/api"
-	"github.com/trezor/blockbook/bchain"
-	"github.com/trezor/blockbook/bchain/coins"
-	"github.com/trezor/blockbook/common"
-	"github.com/trezor/blockbook/db"
-	"github.com/trezor/blockbook/fiat"
-	"github.com/trezor/blockbook/server"
 )
 
 // debounce too close requests for resync

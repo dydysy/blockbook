@@ -9,6 +9,8 @@ import (
 	"sync"
 	"time"
 
+	"github.com/dydysy/blockbook/bchain"
+	"github.com/dydysy/blockbook/common"
 	ethereum "github.com/ethereum/go-ethereum"
 	ethcommon "github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
@@ -17,8 +19,6 @@ import (
 	"github.com/ethereum/go-ethereum/rpc"
 	"github.com/golang/glog"
 	"github.com/juju/errors"
-	"github.com/trezor/blockbook/bchain"
-	"github.com/trezor/blockbook/common"
 )
 
 // EthereumNet type specifies the type of ethereum network

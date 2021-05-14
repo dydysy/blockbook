@@ -5,10 +5,10 @@ import (
 	"math/big"
 	"strconv"
 
+	"github.com/dydysy/blockbook/bchain"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/golang/protobuf/proto"
 	"github.com/juju/errors"
-	"github.com/trezor/blockbook/bchain"
 	"golang.org/x/crypto/sha3"
 )
 

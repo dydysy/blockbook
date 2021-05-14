@@ -16,11 +16,11 @@ import (
 	"time"
 
 	"github.com/decred/dcrd/dcrjson/v3"
+	"github.com/dydysy/blockbook/bchain"
+	"github.com/dydysy/blockbook/bchain/coins/btc"
+	"github.com/dydysy/blockbook/common"
 	"github.com/golang/glog"
 	"github.com/juju/errors"
-	"github.com/trezor/blockbook/bchain"
-	"github.com/trezor/blockbook/bchain/coins/btc"
-	"github.com/trezor/blockbook/common"
 )
 
 // voteBitYes defines the vote bit set when a given block validates the previous

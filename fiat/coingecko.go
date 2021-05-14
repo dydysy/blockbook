@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/dydysy/blockbook/db"
 	"github.com/golang/glog"
-	"github.com/trezor/blockbook/db"
 )
 
 // Coingecko is a structure that implements RatesDownloaderInterface

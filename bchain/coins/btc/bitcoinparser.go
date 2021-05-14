@@ -8,6 +8,7 @@ import (
 	"strconv"
 
 	vlq "github.com/bsm/go-vlq"
+	"github.com/dydysy/blockbook/bchain"
 	"github.com/juju/errors"
 	"github.com/martinboehm/btcd/blockchain"
 	"github.com/martinboehm/btcd/wire"
@@ -15,7 +16,6 @@ import (
 	"github.com/martinboehm/btcutil/chaincfg"
 	"github.com/martinboehm/btcutil/hdkeychain"
 	"github.com/martinboehm/btcutil/txscript"
-	"github.com/trezor/blockbook/bchain"
 )
 
 // temp params for signet(wait btcd commit)

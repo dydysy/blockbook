@@ -4,10 +4,10 @@ import (
 	"encoding/hex"
 	"encoding/json"
 
+	"github.com/dydysy/blockbook/bchain"
+	"github.com/dydysy/blockbook/bchain/coins/btc"
 	"github.com/golang/glog"
 	"github.com/juju/errors"
-	"github.com/trezor/blockbook/bchain"
-	"github.com/trezor/blockbook/bchain/coins/btc"
 )
 
 type FiroRPC struct {

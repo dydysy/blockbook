@@ -13,6 +13,7 @@ RUN apt-get update && \
 ENV GOLANG_VERSION=go1.15.5.linux-amd64
 ENV ROCKSDB_VERSION=v6.13.3
 ENV GOPATH=/go
+ENV GOPROXY="https://goproxy.cn,direct"
 ENV PATH=$PATH:$GOPATH/bin
 ENV CGO_CFLAGS="-I/opt/rocksdb/include"
 ENV CGO_LDFLAGS="-L/opt/rocksdb -ldl -lrocksdb -lstdc++ -lm -lz -lbz2 -lsnappy -llz4"
@@ -45,11 +46,11 @@ RUN go get github.com/gobuffalo/packr/...
 
 # pre-load depencencies
 RUN \
-    cleanup() { rm -rf $GOPATH/src/github.com/trezor ; } && \
+    cleanup() { rm -rf $GOPATH/src/github.com/dydysy; } && \
     trap cleanup EXIT && \
-    mkdir -p $GOPATH/src/github.com/trezor && \
-    cd $GOPATH/src/github.com/trezor && \
-    git clone https://github.com/trezor/blockbook.git && \
+    mkdir -p $GOPATH/src/github.com/dydysy && \
+    cd $GOPATH/src/github.com/dydysy && \
+    git clone https://github.com/dydysy/blockbook.git && \
     cd blockbook && \
     go mod download
 

@@ -50,7 +50,7 @@ func DecodeTransactions(r io.Reader, pver uint32, enc wire.MessageEncoding, blk 
 }
 
 // VersionAuxpow marks that block contains Auxpow
-const VersionAuxpow = (1 << 8)
+const VersionAuxpow = 1 << 8
 
 // SkipAuxpow skips Auxpow data in block
 func SkipAuxpow(r io.ReadSeeker) error {

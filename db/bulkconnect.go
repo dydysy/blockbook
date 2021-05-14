@@ -3,9 +3,9 @@ package db
 import (
 	"time"
 
+	"github.com/dydysy/blockbook/bchain"
 	"github.com/golang/glog"
 	"github.com/tecbot/gorocksdb"
-	"github.com/trezor/blockbook/bchain"
 )
 
 // bulk connect

@@ -15,11 +15,11 @@ import (
 	"unsafe"
 
 	vlq "github.com/bsm/go-vlq"
+	"github.com/dydysy/blockbook/bchain"
+	"github.com/dydysy/blockbook/common"
 	"github.com/golang/glog"
 	"github.com/juju/errors"
 	"github.com/tecbot/gorocksdb"
-	"github.com/trezor/blockbook/bchain"
-	"github.com/trezor/blockbook/common"
 )
 
 const dbVersion = 5

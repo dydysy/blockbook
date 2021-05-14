@@ -9,10 +9,10 @@ import (
 	"sync"
 	"unicode/utf8"
 
+	"github.com/dydysy/blockbook/bchain"
 	ethcommon "github.com/ethereum/go-ethereum/common"
 	"github.com/golang/glog"
 	"github.com/juju/errors"
-	"github.com/trezor/blockbook/bchain"
 )
 
 var erc20abi = `[{"constant":true,"inputs":[],"name":"name","outputs":[{"name":"","type":"string"}],"payable":false,"type":"function","signature":"0x06fdde03"},

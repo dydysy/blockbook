@@ -5,11 +5,11 @@ import (
 	"encoding/hex"
 
 	vlq "github.com/bsm/go-vlq"
+	"github.com/dydysy/blockbook/bchain"
+	"github.com/dydysy/blockbook/bchain/coins/eth"
 	"github.com/golang/glog"
 	"github.com/juju/errors"
 	"github.com/tecbot/gorocksdb"
-	"github.com/trezor/blockbook/bchain"
-	"github.com/trezor/blockbook/bchain/coins/eth"
 )
 
 // AddrContract is Contract address with number of transactions done by given address

@@ -12,8 +12,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/trezor/blockbook/bchain"
-	"github.com/trezor/blockbook/bchain/coins/btc"
+	"github.com/dydysy/blockbook/bchain"
+	"github.com/dydysy/blockbook/bchain/coins/btc"
 )
 
 type testBlock struct {

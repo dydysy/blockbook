@@ -6,10 +6,10 @@ import (
 	"math/big"
 	"strings"
 
+	"github.com/dydysy/blockbook/common"
 	"github.com/gogo/protobuf/proto"
 	"github.com/golang/glog"
 	"github.com/juju/errors"
-	"github.com/trezor/blockbook/common"
 )
 
 // BaseParser implements data parsing/handling functionality base for all other parsers
